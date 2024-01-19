@@ -1,25 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Navigation from './customer/component/Navigation/Navigation';
+import HomePage from './customer/pages/HomePage/HomePage';
+import Footer from './customer/component/Footer/Footer';
+import Product from './customer/component/Product/Product';
+import ProductDetails from './customer/component/ProductDetails/ProductDetails';
+import Cart from './customer/component/Cart/Cart';
+import Checkout from './customer/component/Checkout/Checkout';
+import Order from './customer/component/Order/Order';
+import OderCard from './customer/component/Order/OderCard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="">
+            <Navigation />
+            <div>
+                {/* <HomePage /> */}
+                {/* <Product /> */}
+                {/* <ProductDetails /> */}
+                {/* <Cart /> */}
+                {/* <Checkout /> */}
+                <Order />
+            </div>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
